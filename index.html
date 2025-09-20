@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I SOLVE Akademi – Eğitim, Danışmanlık ve Endüstriyel Çözümler</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <style>
+    
+    .corner-stripes::before, .corner-stripes::after{
+      content:""; position:absolute; width:120px; height:120px; border-radius:12px; opacity:.95; display:none;
+      background:linear-gradient(135deg,transparent 32%,#0f172a 32%,#0f172a 44%,#b2f5ea 44%,#b2f5ea 50%,#0f172a 50%,#0f172a 62%,transparent 62%);
+    }
+    .corner-stripes::before{ top:-16px; left:-16px; transform:rotate(45deg); }
+    .corner-stripes::after{ right:-16px; bottom:-16px; transform:rotate(225deg); }
+  </style>
+</head>
+<body class="text-slate-800 bg-emerald-50">
+
+  <!-- Üst duyuru şeridi -->
+  <div class="w-full bg-slate-900 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+      <span class="opacity-90">I SOLVE Akademi – Eğitim, Danışmanlık ve Endüstriyel Çözümler</span>
+      <a href="iletisim.html" class="underline underline-offset-2 hover:opacity-80">Bize Ulaşın</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+        <span class="text-slate-900">I SOLVE</span> <span class="text-emerald-600">Akademi</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="hover:text-emerald-700">Ana Sayfa</a>
+        <a href="hakkimizda.html" class="hover:text-emerald-700">Hakkımızda</a>
+        <a href="hizmetler.html" class="hover:text-emerald-700">Hizmetler</a>
+        <a href="nedenbiz.html" class="hover:text-emerald-700">Neden Biz?</a>
+        <a href="iletisim.html" class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-700">İletişim</a>
+      </nav>
+      <button class="md:hidden inline-flex items-center px-3 py-2 border rounded text-slate-700 border-slate-300" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="relative corner-stripes">
+      <div class="grid grid-cols-12">
+        <!-- Sol görsel -->
+        <div class="col-span-12 lg:col-span-8 relative">
+          <img src="img/hero.jpg" alt="Danışmanlık" class="w-full h-[440px] md:h-[560px] object-cover">
+          <div class="absolute inset-0 bg-slate-900/30"></div>
+          <div class="absolute bottom-8 left-6 md:left-12">
+            <span class="inline-block mb-3 px-3 py-1 text-xs tracking-wider rounded-full bg-white/90 text-slate-900 font-semibold">EĞİTİM & DANIŞMANLIK</span>
+            <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight drop-shadow">DANIŞMANLIK</h1>
+          </div>
+        </div>
+
+        <!-- Sağ panel -->
+        <div class="col-span-12 lg:col-span-4 bg-slate-900 text-white p-8 flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-semibold leading-snug">Güvenilir çözümlerle sürdürülebilir büyüme</h2>
+            <p class="mt-3 text-slate-300 text-sm leading-relaxed">
+    Proses emniyeti, sürdürülebilirlik, yönetim sistemleri ve operasyonel mükemmellik
+    alanlarında uçtan uca danışmanlık sunuyoruz. Amacımız; işletmelerin <b>güvenli, verimli
+    ve çevreye duyarlı</b> bir şekilde büyümesini sağlamak.
+  </p>
+  <p class="mt-3 text-slate-300 text-sm leading-relaxed">
+    Uzman kadromuz, farklı sektörlerde edindiği <b>15+ yıllık deneyimi</b> ile sizlere 
+    uluslararası standartlarda çözümler sunar. İş güvenliği, kalite ve sürdürülebilirlik
+    stratejilerinde iş ortağınız olarak yanınızdayız.
+  </p>
+          </div>
+          <div class="mt-6 flex flex-col items-center gap-2">
+  <a href="hizmetler.html" 
+     class="inline-block text-center px-5 py-2 rounded-md bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm">
+     Hizmetlerimizi Keşfedin
+  </a>
+
+  <a href="iletisim.html" 
+     class="inline-block text-center px-5 py-2 rounded-md bg-white/10 ring-1 ring-white/20 hover:bg-white/20 text-white text-sm">
+     Ücretsiz Ön Görüşme Alın
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ALT BEYAZ KART -->
+    <div class="relative z-10 -mt-12 px-4 md:px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10">
+          <div class="max-w-3xl">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+              İşletmeleri stratejik içgörü ve operasyonel mükemmellikle güçlendiriyoruz.
+            </h3>
+            <p class="mt-3 text-slate-600 leading-relaxed">
+              Ölçülebilir sonuçlar için sürdürülebilirlik, proses emniyeti ve kalite yönetimi alanlarında uzman ekibimizle yanınızdayız.
+            </p>
+          </div>
+
+          <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-slate-200 p-6 flex flex-col justify-center">
+              <div class="text-5xl font-extrabold text-slate-900">10<span class="text-emerald-500">+</span></div>
+              <div class="mt-2 text-slate-600">yıl sektör deneyimi</div>
+            </div>
+            <div class="md:col-span-2 rounded-2xl bg-slate-100 overflow-hidden">
+  <div class="p-4 text-slate-500 text-sm">Kurucular</div>
+
+  <!-- Slider main container -->
+  <div class="swiper w-full h-64">
+    <div class="swiper-wrapper">
+
+      <!-- Founder 1 -->
+      <div class="swiper-slide flex flex-col items-center justify-center p-4">
+        <img src="img/founder1.jpg" alt="Founder 1" class="w-28 h-28 rounded-full object-cover mb-3">
+        <h4 class="font-semibold text-slate-900">Murat Fikret Erdogan</h4>
+        <p class="text-slate-600 text-sm text-center mt-1">Kimya Mühendisi, İSG Uzmanı</p>
+        <a href="mailto:founder1@example.com" class="mt-2 text-emerald-600 text-sm hover:underline">
+          mfe@isolveacademy.com
+        </a>
+      </div>
+
+      <!-- Founder 2 -->
+      <div class="swiper-slide flex flex-col items-center justify-center p-4">
+        <img src="img/founder2.jpg" alt="Founder 2" class="w-28 h-28 rounded-full object-cover mb-3">
+        <h4 class="font-semibold text-slate-900">Yagmur Isleker</h4>
+        <p class="text-slate-600 text-sm text-center mt-1">Operasyon & Kalite Yönetimi</p>
+        <a href="mailto:founder2@example.com" class="mt-2 text-emerald-600 text-sm hover:underline">
+          yagmur@isolveacademy.com
+        </a>
+      </div>
+
+      <!-- Founder 3 -->
+      <div class="swiper-slide flex flex-col items-center justify-center p-4">
+        <img src="img/founder3.jpg" alt="Founder 3" class="w-28 h-28 rounded-full object-cover mb-3">
+        <h4 class="font-semibold text-slate-900">Semra Ozturk</h4>
+        <p class="text-slate-600 text-sm text-center mt-1">Sürdürülebilirlik Yöneticisi</p>
+        <a href="mailto:founder3@example.com" class="mt-2 text-emerald-600 text-sm hover:underline">
+          semra@isolveacademy.com
+        </a>
+      </div>
+
+      <!-- Founder 4 -->
+      <div class="swiper-slide flex flex-col items-center justify-center p-4">
+        <img src="img/founder4.jpg" alt="Founder 4" class="w-28 h-28 rounded-full object-cover mb-3">
+        <h4 class="font-semibold text-slate-900">Ad Soyad 4</h4>
+        <p class="text-slate-600 text-sm text-center mt-1">Proses Güvenliği Uzmanı</p>
+        <a href="mailto:founder4@example.com" class="mt-2 text-emerald-600 text-sm hover:underline">
+          founder4@example.com
+        </a>
+      </div>
+
+      <!-- Founder 5 -->
+      <div class="swiper-slide flex flex-col items-center justify-center p-4">
+        <img src="img/founder5.jpg" alt="Founder 5" class="w-28 h-28 rounded-full object-cover mb-3">
+        <h4 class="font-semibold text-slate-900">Ad Soyad 5</h4>
+        <p class="text-slate-600 text-sm text-center mt-1">Endüstri Mühendisi</p>
+        <a href="mailto:founder5@example.com" class="mt-2 text-emerald-600 text-sm hover:underline">
+          founder5@example.com
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-4 text-slate-600 text-sm text-center">
+    Kurucularımızın deneyimiyle şekillenen güçlü çözüm ortaklığı.
+  </div>
+</div>
+
+
+          </div>
+
+          <div class="mt-8">
+            <a href="hakkimizda.html" class="inline-flex items-center gap-2 text-emerald-700 hover:underline">Daha fazla bilgi →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALT KOYU BANT -->
+    <div class="bg-slate-900 text-white mt-10">
+      <div class="max-w-6xl mx-auto px-6 py-10">
+        <p class="text-lg md:text-xl font-light opacity-90 italic">
+          “Güvenlik kültürü, verimlilik ve sürdürülebilirlik — hepsi aynı stratejinin parçası.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© 2025 I SOLVE Akademi</p>
+      <div class="text-sm text-slate-600">
+        <a href="mailto:info@isolveakademi.com" class="hover:text-emerald-600">info@isolveakademi.com</a> ·
+        <a href="iletisim.html" class="hover:text-emerald-600">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+  });
+</script>
+
+</body>
+</html>

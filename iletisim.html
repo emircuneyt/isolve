@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim — I SOLVE Akademi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-slate-800 bg-emerald-50">
+
+  <!-- Üst duyuru -->
+  <div class="w-full bg-slate-900 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+      <span class="opacity-90">I SOLVE Akademi – Eğitim, Danışmanlık ve Endüstriyel Çözümler</span>
+      <a href="iletisim.html" class="underline underline-offset-2 hover:opacity-80">Bize Ulaşın</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-extrabold">
+        <span class="text-slate-900">I SOLVE</span> <span class="text-emerald-600">Akademi</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="hover:text-emerald-700">Ana Sayfa</a>
+        <a href="hakkimizda.html" class="hover:text-emerald-700">Hakkımızda</a>
+        <a href="hizmetler.html" class="hover:text-emerald-700">Hizmetler</a>
+        <a href="nedenbiz.html" class="hover:text-emerald-700">Neden Biz?</a>
+        <a href="iletisim.html" class="inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-700">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Başlık -->
+  <section class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900">İletişim</h1>
+      <p class="mt-3 text-slate-600 max-w-3xl">Sorularınız ve teklif talepleriniz için formu doldurun, size kısa sürede dönüş yapalım.</p>
+    </div>
+  </section>
+
+  <!-- Form + Bilgi -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+    <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow">
+      <form class="space-y-4" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Ad Soyad</label>
+            <input name="name" required class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">E-posta</label>
+            <input type="email" name="email" required class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Konu</label>
+          <input name="subject" class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Mesaj</label>
+          <textarea name="message" rows="6" class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400"></textarea>
+        </div>
+        <button class="px-5 py-3 rounded-lg bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400">Gönder</button>
+      </form>
+    </div>
+
+    <aside class="bg-white rounded-2xl p-6 shadow space-y-4">
+      <h3 class="text-lg font-bold">İletişim Bilgileri</h3>
+      <p><b>E-posta:</b> <a class="text-emerald-700 hover:underline" href="mailto:info@isolveakademi.com">info@isolveakademi.com</a></p>
+      <p><b>Telefon:</b> +90 (___) ___ __ __</p>
+      <p><b>Adres:</b> _________ / _________</p>
+      <div class="rounded-xl overflow-hidden">
+        <!-- İstersen Google Maps embed -->
+        <!-- <iframe ... ></iframe> -->
+        <div class="bg-slate-100 p-6 text-slate-500 text-sm text-center">Harita / görsel alanı</div>
+      </div>
+    </aside>
+  </section>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© 2025 I SOLVE Akademi</p>
+      <div class="text-sm text-slate-600">
+        <a href="mailto:info@isolveakademi.com" class="hover:text-emerald-600">info@isolveakademi.com</a> ·
+        <a href="iletisim.html" class="hover:text-emerald-600">İletişim</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
